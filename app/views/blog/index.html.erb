@@ -1,3 +1,17 @@
-<h1>Bloggggg!</h1>
+<h1 class="text-2xl text-red-600 underline">Bloggggg!</h1>
 
 <%= @test %>
+
+<%= form_with(url: blog_path) do |form| %>
+
+  <div>
+    <%= form.text_field :title  %>
+  </div>
+
+  <div>
+    <%= form.text_area :body  %>
+  </div>
+
+  <%= form.submit "Create Post" %>
+
+<% end %>
