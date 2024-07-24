@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get "/blog", to: "blog#index"
-  get "/blog/:id", to: "blog#show"
-  post "/blog", to: "blog#create"
+  # Resource builds all crud action routes for blog
+  resource :blog
 end
