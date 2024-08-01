@@ -1,14 +1,12 @@
-<div class="flex flex-col items-start justify-center px-4 md:items-center mt-28  sm:py-6 lg:py-0 ">
+<div class="flex flex-col items-start justify-center w-full px-4 md:items-center mt-28 sm:py-6 lg:py-0 ">
 
-	<h1 class="text-4xl text-red-600 mb-8">Bloggggg!</h1>
-
-	<%= @test %>
+	<h1 class="mb-8 text-4xl text-red-600">Create a Bloggggg!</h1>
 
 	<div class="flex items-center justify-center">
 		<%= form_with(url: blog_path) do |form| %>
 
 
-			<div class="space-y-4 mb-2">
+			<div class="mb-2 space-y-4">
 				<div>
 					<%= form.text_field :title  %>
 				</div>
