@@ -1,0 +1,25 @@
+<aside
+  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full border-r border-gray-200 bg-gradient-to-r from-purple-50 via-purple-100 to-purple-50 pt-14 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+  aria-label="Sidenav"
+  id="drawer-navigation"
+>
+  <div class="h-full px-3 py-5 overflow-y-auto bg-gradient-to-r from-purple-500 via-purple-500/80 to-purple-500 dark:bg-gray-800">
+    <ul class="space-y-2">
+<!-- Sidebar nav items top section -->
+      <%= render "layouts/partials/sidebar/overview" %>
+      <%= render "layouts/partials/sidebar/pages" %>
+      <%= render "layouts/partials/sidebar/sales" %>
+      <%= render "layouts/partials/sidebar/components" %>
+    </ul>
+    <ul
+      class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
+    >
+<!-- Sidebar nav items bottom section -->
+      <%= render "layouts/partials/sidebar/messages" %>
+      <%= render "layouts/partials/sidebar/authentication" %>
+      <%= render "layouts/partials/sidebar/help" %>
+
+
+    </ul>
+  </div>
+</aside>

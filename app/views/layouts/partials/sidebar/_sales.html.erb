@@ -1,0 +1,37 @@
+<li class="group">
+  <button
+    type="button"
+    class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg peer group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+    aria-controls="dropdown-sales"
+    aria-expanded="false"
+    data-collapse-toggle="dropdown-sales">
+
+    <%= icon("fa-solid", "bag-shopping", class:"text-black") %>
+    <span class="flex-1 ml-3 text-left whitespace-nowrap"
+      >Sales</span>
+    <%= icon("fa-solid", "chevron-down", class:"text-black transform peer-aria-expanded:rotate-180") %>
+  </button>
+  <ul id="dropdown-sales" class="hidden py-2 space-y-2">
+    <li>
+      <a
+        href="#"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        >Products</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        >Billing</a
+      >
+    </li>
+    <li>
+      <a
+        href="#"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        >Invoice</a
+      >
+    </li>
+  </ul>
+</li>

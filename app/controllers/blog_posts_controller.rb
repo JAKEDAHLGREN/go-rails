@@ -1,9 +1,5 @@
 class BlogPostsController < ApplicationController
-  # def new
-  #   @blog_post = BlogPost.new
-  #   BlogPost.save
-  # end
-
+  layout "application"
   def index
     @blog_posts = BlogPost.all
   end
@@ -14,6 +10,10 @@ class BlogPostsController < ApplicationController
     redirect_to root_path
   end
 
+  def new
+    @blog_post = BlogPost.new
+    # BlogPost.save
+  end
   # def create
   #   @blog_post = BlogPost.
   #   redirect_to action: :index
