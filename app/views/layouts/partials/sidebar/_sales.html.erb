@@ -1,35 +1,36 @@
 <li class="group">
-  <button
-    type="button"
-    class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg peer group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-    aria-controls="dropdown-sales"
-    aria-expanded="false"
-    data-collapse-toggle="dropdown-sales">
+  <%= button_tag type: "button",
+    class: "flex items-center w-full p-2 text-base font-medium text-black transition duration-75 rounded-lg hover:text-purple-600 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 peer",
+    aria: { controls: "dropdown-sales", expanded: false },
+    data: { collapse_toggle: "dropdown-sales" } do %>
 
-    <%= icon("fa-solid", "bag-shopping", class:"text-black") %>
+    <%= icon("fa-solid", "bag-shopping", class:"stroke-current") %>
+
     <span class="flex-1 ml-3 text-left whitespace-nowrap"
-      >Sales</span>
-    <%= icon("fa-solid", "chevron-down", class:"text-black transform peer-aria-expanded:rotate-180") %>
-  </button>
+      >
+      Sales
+    </span>
+
+    <%= icon("fa-solid", "chevron-down", class:"stroke-current peer-aria-expanded:rotate-180") %>
+  <% end %>
+
   <ul id="dropdown-sales" class="hidden py-2 space-y-2">
     <li>
-      <a
-        href="#"
-        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-        >Products</a
-      >
+      <a href="#" class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 hover:text-purple-600">
+        Products
+      </a>
     </li>
     <li>
       <a
         href="#"
-        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 hover:text-purple-600"
         >Billing</a
       >
     </li>
     <li>
       <a
         href="#"
-        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 hover:text-purple-600"
         >Invoice</a
       >
     </li>

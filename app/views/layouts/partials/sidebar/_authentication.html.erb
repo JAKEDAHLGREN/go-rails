@@ -1,47 +1,38 @@
-<li>
-  <button
-    type="button"
-    class="flex items-center w-full p-2 text-base font-medium text-black transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-    aria-controls="dropdown-authentication"
-    data-collapse-toggle="dropdown-authentication"
-  >
-    <%= icon("fa-solid","lock", class:"") %>
-    <span class="flex-1 ml-3 text-left whitespace-nowrap"
-      >Authentication</span
-    >
-    <svg
-      aria-hidden="true"
-      class="w-6 h-6"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-        clip-rule="evenodd"
-      ></path>
-    </svg>
-  </button>
+<li class="group">
+  <%= button_tag type: "button",
+    class: "flex items-center w-full p-2 text-base font-medium text-black transition duration-75 rounded-lg hover:text-purple-600 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 peer",
+    aria: { controls: "dropdown-authentication", expanded: false },
+    data: { collapse_toggle: "dropdown-authentication" } do %>
+
+    <%= icon("fa-solid", "lock", class: "stroke-current") %>
+
+    <span class="flex-1 ml-3 text-left whitespace-nowrap">Authentication</span>
+
+    <!-- Chevron Icon with Rotation on Expanded State -->
+    <div class="peer-aria-expanded:rotate-180">
+      <%= icon("fa-solid", "chevron-down", class: "stroke-current") %>
+    </div>
+  <% end %>
+
   <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
     <li>
       <a
         href="#"
-        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 hover:text-purple-600"
         >Sign In</a
       >
     </li>
     <li>
       <a
         href="#"
-        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 hover:text-purple-600"
         >Sign Up</a
       >
     </li>
     <li>
       <a
         href="#"
-        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+        class="flex items-center w-full p-2 text-base font-medium text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 hover:text-purple-600"
         >Forgot Password</a
       >
     </li>
