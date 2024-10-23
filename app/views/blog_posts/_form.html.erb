@@ -9,13 +9,14 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="flex flex-col mt-2 mb-4">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class:"w-fit rounded-xl" %>
   </div>
-  <div>
+
+  <div class="flex flex-col my-2">
     <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, class:"w-1/2 h-32 rounded-xl" %>
   </div>
 
   <%= form.submit class:"border py-2 px-4 border-gray-400 rounded-full" %>

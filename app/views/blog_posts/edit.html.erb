@@ -1,3 +1,9 @@
-<h1>Edit Blog Post</h1>
+<div class="p-4">
+  <h1 class="text-4xl font-semibold text-purple-700 ">
+    Edit Blog Post
+  </h1>
 
-<%= render partial: "form", locals: { blog_post: @blog_post } %>
+  <%= render partial: "form", locals: { blog_post: @blog_post } %>
+
+  <%= button_to "Delete", @blog_post, method: :delete, data: { turbo_confirm: "Are you sure?" }, class:"text-white bg-red-600 rounded-full border border-black py-2 px-4 mt-2" %>
+</div>
